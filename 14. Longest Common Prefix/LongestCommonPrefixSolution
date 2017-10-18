@@ -1,0 +1,30 @@
+/**
+ * Created by Ding on 2017/10/18.
+ * https://leetcode.com/problems/longest-common-prefix/description/
+ * 返回字符型数组中的各个元素的最大公共前缀
+ */
+
+public class LongestCommonPrefixSolution {
+    public static String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+
+        String str = strs[0];
+        int i = 0;
+        while (i < strs.length) {
+            while (strs[i].indexOf(str) != 0) {
+                str = str.substring(0, str.length() - 1);
+            }
+
+            i++;
+        }
+        return str;
+    }
+
+    public static void main(String[] args) {
+        String[] strs = new String[]{"bcdfg", "bcwed", "bcdfhw"};
+        String s = longestCommonPrefix(strs);
+        System.out.println("结果是：" + s);
+    }
+}
