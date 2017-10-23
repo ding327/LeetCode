@@ -8,3 +8,5 @@ https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 例如， 给定输入数组为 [1,1,2] 你的函数应该返回length = 2， 其前两个元素分别是1和2。
 <br><br><br>
 之前没理解题意，以为只是返回最终的长度，一直提交不成功。。。。
+<br>
+[1,1,2]为例，运算完成后，为[1,2,2];
